@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-Hant"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>我要下單｜全能里長（預覽）</title><script src="https://cdn.tailwindcss.com"></script></head>
+<body class="bg-teal-50 min-h-screen flex items-center justify-center px-5">
+<div class="bg-white rounded-2xl shadow-lg p-8 max-w-md text-center">
+  <div class="text-5xl mb-3">🛒</div>
+  <h1 class="text-xl font-bold text-teal-700 mb-2">這是靜態預覽（mockup）</h1>
+  <p class="text-slate-600 leading-7">正式版的「下單 / 詢價」會導回 <code class="bg-slate-100 px-1 rounded">/s/:chain_id</code> 分享鏈（V2 §12.4.2）走 <code class="bg-slate-100 px-1 rounded">/order/:chain_id</code> 或議價，<b>不另建成交路徑</b>。</p>
+  <p class="text-slate-400 text-sm mt-4" id="ctx"></p>
+  <a href="./" class="cta inline-block mt-5 px-6 py-2 bg-teal-500 text-white rounded-full font-bold">返回</a>
+</div>
+<script>const q=new URLSearchParams(location.search);const v=q.get('v')||q.get('a');if(v)document.getElementById('ctx').textContent=(q.has('v')?'village = ':'asset = ')+v;</script>
+</body></html>
